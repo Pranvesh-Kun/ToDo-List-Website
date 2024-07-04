@@ -1,12 +1,8 @@
-from flask import Flask, render_template, redirect, url_for, request, flash
-from flask_bootstrap import Bootstrap5
+from flask import Flask, render_template, request, flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-from sqlalchemy import Integer, String, Float, Boolean
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
-from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
+from sqlalchemy import Integer, String
+from flask_login import UserMixin, login_user, LoginManager, logout_user
 
 
 app = Flask(__name__)
